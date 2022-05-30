@@ -11,15 +11,14 @@ Pour approfondir sur cette idée, nous allons analyser les prix de loyer pour 8 
 ## Les variables
 Nous comptons avec une base de données par ville. Chacune de ces bases est composée de 9 variables :
 
-•	Type de vendeur (seller_type): Variable catégorielle prenant les valeurs owner, agence et builder.
-•	Chambres (bedroom) : Variable numerique indiquant le nombre de chambres dans le logement
-•	Salle de bain (bathroom) :  Variable caractère donnat le nombre de salles de bain en forme de phrase. Par exemple : « 2 Bathrooms »
-•	Type d'agencement (layout_type) : Variable representant l’organisation de l’appartement. Deux catégories sont définies en Inde : BHK (Bathroom – Hall - Kitchen) et RK (Room - Kitchen).
-•	Type de propriété (property_type) : Catégorielle indiquant si le logement est un appartement, un logement indépendant, une maison indépendante, un penthouse, un studio ou une villa.
-•	Localité (Locality) : Localité (quartier) où le logement est situé. 
-•	Prix (Price) : Variable numérique donnant le prix du bail en roupies indiennes.
-•	Area : Superficie du logement en pied carrés. 
-•	Type de mobilier (Furnish type) : Variable prenant 3 catégories : Meublé, semi – meublé et pas meublé (furnished, semi-furnished and unfurnished).
+- Type de vendeur (seller_type): Variable catégorielle prenant les valeurs owner, agence et builder.
+- Chambres (bedroom) : Variable numerique indiquant le nombre de chambres dans le logement
+- Type d'agencement (layout_type) : Variable representant l’organisation de l’appartement. Deux catégories sont définies en Inde : BHK (Bathroom – Hall - Kitchen) et RK (Room - Kitchen).
+- Type de propriété (property_type) : Catégorielle indiquant si le logement est un appartement, un logement indépendant, une maison indépendante, un penthouse, un studio ou une villa.
+- Localité (Locality) : Localité (quartier) où le logement est situé. 
+- Prix (Price) : Variable numérique donnant le prix du bail en roupies indiennes.
+- Area : Superficie du logement en pied carrés. 
+- Type de mobilier (Furnish type) : Variable prenant 3 catégories : Meublé, semi – meublé et pas meublé (furnished, semi-furnished and unfurnished).
 
 ## Préparation des données (nettoyage et transformation)
 Nous sommes intéressés en analyser le prix du loyer pour les 8 métropoles simultanément. Pour cela, nous allons créer une base de données qui ressemble les 8 bases de données. Cette opération produit une base de données de 196.868 observations.
@@ -37,6 +36,9 @@ Comme solution (et sachant que nous avons suffisants observations) nous avons ef
 ## _Outliers_
 En observant le nombre de salles de bains, nous remarquons qu'il y a des maisons énormes (villas avec +15 salles de bain). On peut considérer ces observations comme des valeurs extrêmes, ce qui nous pose de problèmes lors de l'analyse. Donc, comme ce qui nous intéresse dans ce document est de voir s'il existe des variables (outre la superficie) qui peuvent affecter le prix du loyer dans les villes métropolitaines, il n'est pas important de prendre en compte les maisons de luxe. 
 A droite, on observe la distribution de la variable prix avant le traitement et à gauche, la distribution post-traitement.
+
+![]('boxp1.png')
+![]('boxp2.png')
   
 Bien qu'il y ait encore des valeurs aberrantes, nous ne les supprimerons pas car nous avons décidé que les logements dont le loyer est de 60.000 roupies sont couteux mais pas luxueux. Il peut être aussi intéressant savoir si la relation entre prix et d’autres variables est la même pour les appartements coûteux que pour les bons marchés. 
 
