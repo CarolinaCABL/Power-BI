@@ -4,8 +4,11 @@
 ### 2021-2022.
 
 Les agglomérations dans les grandes villes sont un phénomène largement étudié en économie dû les conséquences sur le niveau de vie, notamment dans le prix des loyers. Plus grande est une ville, moins de sol est disponible ce qui fait monter les prix par mètre carré à des niveau parfois exorbitants.
+
 Au lieu de se concentrer dans le prix du sol, dans cette analyse nous allons nous concentrer sur prix du loyer, spécifiquement pour 8 villes métropolitaines en Inde (Dehli, Mumbai, Kolkata, Pune, Ahmedabad, Bangalore et Hyberabad). 
+
 La première idée qui vient à l’esprit lorsque l’on parle du prix du bail, est que celui-ci augmente proportionnellement à la surface : le loyer est d'autant plus élevé que logement est grand (area en M2). Pourtant, des autres facteurs peuvent aussi rentrer en jeu comme la division du logement, par exemple, salle de bain et WC séparés, l'équipement compris (meublé ou pas meublé), qu'il soit loué par une agence ou un particulier, et surtout, la localisation de l'immeuble (quartier/ville).
+
 Pour approfondir sur cette idée, nous allons analyser les prix de loyer pour 8 villes métropolitaines en Inde en fonction d'un ensemble de caractéristiques du logement. La base de données est issue de la plateforme web Kaggle (House Rent Prices of Metropolitain Cities in India) et consiste en une extraction de données la page web www.makaan.com avec la technique de web scrapping en utilisant l'extension Instant Data Scraper de Chrome. 
 
 ## Les variables
